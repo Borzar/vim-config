@@ -11,19 +11,18 @@ set sw=2
 set relativenumber
 set laststatus=2
 set noshowmode
+set cursorline
+set termguicolors
 
 call plug#begin('~/.nvim/plugged')
 
 " temas
 Plug 'morhetz/gruvbox'
-Plug 'shaunsingh/nord.nvim'
-Plug 'folke/lsp-colors.nvim'
 Plug 'jacoborus/tender.vim'
 
 " status bar
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
-Plug 'shaunsingh/nord.nvim'
 
 "autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -53,29 +52,18 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
-"treesitter
-"lua require'nvim-treesitter.configs'.setup{
-	"ensure_installed = {
-		"'lua',
-		"'javascript',
-		"'typescript',
-		"'html',
-		"'css',
-	"},
-	"highlight = {
-		"enable=true
-	"}
-"}
-"
-" coc-config
+"coc-config
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " temas
-""colorscheme gruvbox
-"let g:gruvbox_contrast_dark="soft"
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+ 
+"set background=dark 
+"let g:gruvbox_contrast_dark = "hard"
+"colorscheme gruvbox
+
 colorscheme tender
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:lightline = { 'colorscheme': 'tender' }
 let g:airline_theme = 'tender'
 

@@ -19,10 +19,12 @@ call plug#begin('~/.nvim/plugged')
 " temas
 Plug 'morhetz/gruvbox'
 Plug 'jacoborus/tender.vim'
+Plug 'EdenEast/nightfox.nvim' 
 
 " status bar
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
 
 "autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -62,10 +64,23 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 "let g:gruvbox_contrast_dark = "hard"
 "colorscheme gruvbox
 
-colorscheme tender
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-let g:lightline = { 'colorscheme': 'tender' }
-let g:airline_theme = 'tender'
+"colorscheme tender
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"let g:lightline = { 'colorscheme': 'tender' }
+"let g:airline_theme = 'tender'
+colorscheme nightfox
+"let g:lightline = { 'colorscheme': 'nightfox' }
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ }
 
 let NERDTreeQuitOnOpen=1
 let mapleader=" "

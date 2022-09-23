@@ -35,6 +35,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mhinz/vim-signify'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Yggdroot/indentLine'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " typing 
 Plug 'jiangmiao/auto-pairs'

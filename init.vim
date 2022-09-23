@@ -30,7 +30,6 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " IDE
-Plug 'scrooloose/nerdtree'
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mhinz/vim-signify'
@@ -41,7 +40,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " syntax
 Plug 'sheerun/vim-polyglot'
@@ -61,15 +59,15 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 " temas
  
 "set background=dark 
-"let g:gruvbox_contrast_dark = "hard"
+"let g:gruvbox_contrast_dark  
 "colorscheme gruvbox
 
 "colorscheme tender
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "let g:lightline = { 'colorscheme': 'tender' }
 "let g:airline_theme = 'tender'
+
 colorscheme nightfox
-"let g:lightline = { 'colorscheme': 'nightfox' }
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
@@ -82,13 +80,19 @@ let g:lightline = {
       \ },
       \ }
 
+" Netrw config
+let g:netrw_keepdir = 0
+let g:netrw_winsize = 30
+
+
 let NERDTreeQuitOnOpen=1
+
 let mapleader=" "
 
 " faster scrolling
 nmap <Leader>s <Plug>(easymotion-s2)
 
-nmap <Leader>nt :NERDTreeFind<CR>
+nmap <Leader>nt :Lexplore<CR>
 
 " split resize
 nnoremap <Leader>> 10<C-w>>

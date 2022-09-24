@@ -71,7 +71,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 colorscheme nightfox
 
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'deus',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]

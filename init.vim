@@ -86,14 +86,15 @@ let g:netrw_keepdir = 0
 let g:netrw_winsize = 30
 
 
-let NERDTreeQuitOnOpen=1
-
 let mapleader=" "
 
 " faster scrolling
 nmap <Leader>s <Plug>(easymotion-s2)
 
 nmap <Leader>nt :Lexplore<CR>
+nmap <Leader>bn :bn<CR>
+nmap <Leader>bp :bp<CR>
+nmap <Leader>bd :bd<CR>
 
 " split resize
 nnoremap <Leader>> 10<C-w>>
@@ -108,4 +109,3 @@ nmap <silent> gr <Plug>(coc-definition)
 " buffers
 map <Leader>ob :Buffers<cr>
 map <Leader>p :Files<cr>
-

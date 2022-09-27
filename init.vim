@@ -20,6 +20,7 @@ call plug#begin('~/.nvim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'jacoborus/tender.vim'
 Plug 'EdenEast/nightfox.nvim' 
+Plug 'tanvirtin/monokai.nvim'
 
 " status bar
 Plug 'morhetz/gruvbox'
@@ -68,10 +69,12 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 "let g:lightline = { 'colorscheme': 'tender' }
 "let g:airline_theme = 'tender'
 
-colorscheme nightfox
+"colorscheme nightfox
+
+colorscheme monokai 
 
 let g:lightline = {
-      \ 'colorscheme': 'deus',
+      \ 'colorscheme': 'molokai',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -83,7 +86,7 @@ let g:lightline = {
 
 " Netrw config
 let g:netrw_keepdir = 0
-let g:netrw_winsize = 30
+let g:netrw_winsize = 50
 
 
 let mapleader=" "
@@ -91,7 +94,7 @@ let mapleader=" "
 " faster scrolling
 nmap <Leader>s <Plug>(easymotion-s2)
 
-nmap <Leader>nt :Lexplore<CR>
+nmap <Leader>nt :Explore<CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
 nmap <Leader>bd :bd<CR>

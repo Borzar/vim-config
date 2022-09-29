@@ -21,6 +21,7 @@ Plug 'morhetz/gruvbox'
 Plug 'jacoborus/tender.vim'
 Plug 'EdenEast/nightfox.nvim' 
 Plug 'tanvirtin/monokai.nvim'
+Plug 'tribela/vim-transparent'
 
 " status bar
 Plug 'morhetz/gruvbox'

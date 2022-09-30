@@ -22,6 +22,9 @@ Plug 'jacoborus/tender.vim'
 Plug 'EdenEast/nightfox.nvim' 
 Plug 'tanvirtin/monokai.nvim'
 Plug 'tribela/vim-transparent'
+Plug 'savq/melange'
+Plug 'heraldofsolace/nisha-vim'
+Plug 'louisboilard/pyramid.nvim', {'branch': 'main'}
 
 " status bar
 Plug 'morhetz/gruvbox'

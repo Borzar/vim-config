@@ -73,9 +73,9 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 "let g:lightline = { 'colorscheme': 'tender' }
 "let g:airline_theme = 'tender'
 
-"colorscheme nightfox
+colorscheme pyramid 
 
-colorscheme monokai 
+"colorscheme monokai 
 
 let g:lightline = {
       \ 'colorscheme': 'molokai',

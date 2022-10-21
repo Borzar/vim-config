@@ -25,6 +25,7 @@ Plug 'tribela/vim-transparent'
 Plug 'savq/melange'
 Plug 'heraldofsolace/nisha-vim'
 Plug 'louisboilard/pyramid.nvim', {'branch': 'main'}
+Plug 'kuznetsss/meadow-nvim'
 
 " status bar
 Plug 'morhetz/gruvbox'
@@ -72,7 +73,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "let g:lightline = { 'colorscheme': 'tender' }
 "let g:airline_theme = 'tender'
-
+"
 colorscheme pyramid 
 
 "colorscheme monokai 

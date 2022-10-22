@@ -13,6 +13,7 @@ set laststatus=2
 set noshowmode
 set cursorline
 set termguicolors
+set nocul
 
 call plug#begin('~/.nvim/plugged')
 
@@ -26,6 +27,7 @@ Plug 'savq/melange'
 Plug 'heraldofsolace/nisha-vim'
 Plug 'louisboilard/pyramid.nvim', {'branch': 'main'}
 Plug 'kuznetsss/meadow-nvim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " status bar
 Plug 'morhetz/gruvbox'
@@ -64,22 +66,15 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " temas
- 
-"set background=dark 
-"let g:gruvbox_contrast_dark  
-"colorscheme gruvbox
-
 "colorscheme tender
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "let g:lightline = { 'colorscheme': 'tender' }
 "let g:airline_theme = 'tender'
 "
-colorscheme pyramid 
-
-"colorscheme monokai 
+colorscheme meadow-nvim 
 
 let g:lightline = {
-      \ 'colorscheme': 'molokai',
+      \ 'colorscheme': 'deus',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -92,7 +87,6 @@ let g:lightline = {
 " Netrw config
 let g:netrw_keepdir = 0
 let g:netrw_winsize = 50
-
 
 let mapleader=" "
 

@@ -28,6 +28,7 @@ Plug 'heraldofsolace/nisha-vim'
 Plug 'louisboilard/pyramid.nvim', {'branch': 'main'}
 Plug 'kuznetsss/meadow-nvim'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'sjl/badwolf'
 
 " status bar
 Plug 'morhetz/gruvbox'
@@ -71,7 +72,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 "let g:lightline = { 'colorscheme': 'tender' }
 "let g:airline_theme = 'tender'
 "
-colorscheme meadow-nvim 
+colorscheme meadow-nvim  
 
 let g:lightline = {
       \ 'colorscheme': 'deus',

@@ -74,6 +74,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 "
 colorscheme meadow-nvim
 colorscheme badwolf 
+highlight Normal guibg=none ctermbg=NONE
 
 let g:lightline = {
       \ 'colorscheme': 'deus',

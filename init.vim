@@ -17,7 +17,7 @@ set nocul
 
 call plug#begin('~/.nvim/plugged')
 
-" temas
+" themes
 Plug 'morhetz/gruvbox'
 Plug 'jacoborus/tender.vim'
 Plug 'EdenEast/nightfox.nvim' 
@@ -45,6 +45,8 @@ Plug 'mhinz/vim-signify'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Yggdroot/indentLine'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'santiagovrancovich/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " typing 
 Plug 'jiangmiao/auto-pairs'
@@ -88,15 +90,17 @@ let g:lightline = {
       \ }
 
 " Netrw config
-let g:netrw_keepdir = 0
-let g:netrw_winsize = 50
+"let g:netrw_keepdir = 0
+"let g:netrw_winsize = 50
+
+let NERDTreeQuitOnOpen=1
 
 let mapleader=" "
 
 " faster scrolling
 nmap <Leader>s <Plug>(easymotion-s2)
 
-nmap <Leader>nt :Explore<CR>
+nmap <Leader>nt :NERDTreeFind<CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
 nmap <Leader>bd :bd<CR>

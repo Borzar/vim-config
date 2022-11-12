@@ -43,7 +43,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mhinz/vim-signify'
 Plug 'scrooloose/nerdcommenter'
-Plug 'Yggdroot/indentLine'
+"Plug 'Yggdroot/indentLine'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'santiagovrancovich/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -68,15 +68,14 @@ call plug#end()
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-" temas
-"colorscheme tender
-"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-"let g:lightline = { 'colorscheme': 'tender' }
-"let g:airline_theme = 'tender'
-"
-colorscheme meadow-nvim
-colorscheme badwolf 
-highlight Normal guibg=none ctermbg=NONE
+"colorscheme badwolf 
+highlight Normal guibg=none ctermbg=NONE cterm=NONE gui=NONE
+colorscheme tokyonight 
+
+" signify
+highlight SignifySignAdd    ctermfg=green  guifg=#00ff00 cterm=NONE gui=NONE
+highlight SignifySignDelete ctermfg=red    guifg=#ff0000 cterm=NONE gui=NONE
+highlight SignifySignChange ctermfg=yellow guifg=#ffff00 cterm=NONE gui=NONE
 
 let g:lightline = {
       \ 'colorscheme': 'deus',
@@ -88,10 +87,6 @@ let g:lightline = {
       \   'gitbranch': 'gitbranch#name'
       \ },
       \ }
-
-" Netrw config
-"let g:netrw_keepdir = 0
-"let g:netrw_winsize = 50
 
 let NERDTreeQuitOnOpen=1
 
